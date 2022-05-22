@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="img/favicon-32x32.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sneakers</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg border-bottom">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="img/logo.svg" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse ms-4" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-black-50 active" aria-current="page" href="#">Collection</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black-50" href="#">Men</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black-50" href="#">Women</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black-50" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black-50" href="#">Contact</a>
+              </li>
+            </ul>
+            <button type="button" class="btn btn-cart shadow-none" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="img/icon-cart.svg" alt=""></button>
+            <button type="button" class="btn btn-avatar shadow-none"><img src="img/image-avatar.png" alt="" class="w-50 ps-3"></button>
+          </div>
+        </div>
+      </nav>
+      <div class="row min-vh-100 p-5">
+        <div class="col-lg-6 col-12">
+          <img src="img/image-product-1.jpg" alt="" class="product-1  w-75">
+          <div class="my-5">
+            <a href="" class="btn p-0"><img src="img/image-product-1-thumbnail.jpg" alt="" class="thumbnail-img"></a>
+            <a href="" class="btn p-0 mx-lg-3"><img src="img/image-product-2-thumbnail.jpg" alt="" class="thumbnail-img"></a>
+            <a href="" class="btn p-0 me-lg-3"><img src="img/image-product-3-thumbnail.jpg" alt="" class="thumbnail-img"></a>
+            <a href="" class="btn p-0"><img src="img/image-product-4-thumbnail.jpg" alt="" class="thumbnail-img"></a>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12">
+          <h6 class="pt-5">SNEAKER COMPANY</h6>
+          <h1 class="fw-bolder">Fall Limited Edition Sneakers</h1>
+          <p class="my-4 text-black-50">These low-profile sneakers are your perfect casual wear companion.Featuring a durable rubber outer sole, they will withstand everything the weather can offer.</p>
+          <div class="d-flex">
+            <p class="fw-bolder fs-3 price">$125.00</p><span class="fw-bold mx-3 mt-2">50%</span>
+          </div>
+          <p class="text-black-50 opacity-50 p-0"><s>$250.00</s></p>
+          <div class="d-flex">
+            <div class="btn-group bg-light rounded-3 px-2" role="group" aria-label="Basic example">
+              <button type="button" id="add" class="btn shadow-none"><img src="img/icon-plus.svg" alt=""></button>
+              <button type="button" id="qty" class="btn fw-bold shadow-none disabled" value="0">0</button>
+              <button type="button" id="minus" class="btn shadow-none"><img src="img/icon-minus.svg" alt="" class=""></button>
+            </div>
+            <button class="btn-add-cart rounded-3 text-white ms-5"><img src="img/icon-cart.svg" alt="" class="cart-img pe-3">Add to cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+            </div>
+            <div class="modal-body" id="cart-list">
+              <p class="text-center text-black-50">Your cart is empty</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

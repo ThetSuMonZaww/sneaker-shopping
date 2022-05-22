@@ -1,0 +1,68 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=DM+Sans:wght@400;500;700&family=Josefin+Sans:wght@300;400;500&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Montserrat:wght@300;400;500;600&family=Padauk:wght@400;700&display=swap');
+
+$font-family: 'Kumbh Sans', sans-serif;
+$primary :  hsl(26, 100%, 55%);
+
+.nav-link{
+  font-size: 12px;
+}
+
+.product-1{
+  border-radius: 20px;
+}
+
+.thumbnail-img{
+  width: 75px;
+  height: 75px;
+  border-radius: 10px;
+}
+
+h6{
+  font-size: 16px;
+  color: $primary;
+}
+
+p{
+  font-size: 15px;
+  font-family: $font-family;
+}
+
+span{
+  color: $primary;
+  background-color: hsl(25, 100%, 94%);
+  height: 30px;
+  width: 40px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.btn-add-cart{
+  background-color: $primary;
+  border: none;
+  width: 300px;
+  font-size: 12px;
+}
+
+.cart-img{
+  height: 15px;
+  fill: whitesmoke;
+}
+
+.modal {
+  position: absolute;
+  top: 25px;
+  right: 0px;
+  bottom: 0;
+  left: 400px;
+  z-index: 10040;
+  overflow: auto;
+  overflow-y: auto;
+}
+
+.modal-backdrop.show {
+  opacity: 0.0;
+}
+
