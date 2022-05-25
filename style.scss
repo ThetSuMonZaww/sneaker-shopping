@@ -1,5 +1,6 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+@import "node_modules/lightbox2/src/css/lightbox.css";
 
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=DM+Sans:wght@400;500;700&family=Josefin+Sans:wght@300;400;500&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Montserrat:wght@300;400;500;600&family=Padauk:wght@400;700&display=swap');
 
@@ -64,5 +65,43 @@ span{
 
 .modal-backdrop.show {
   opacity: 0.0;
+}
+
+.modal-body{
+  img{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+  }
+  button{
+    background-color: $primary;
+    align-content: center;
+    font-size: 12px;
+    border-radius: 5px;
+  }
+  p{
+    font-size: 13px;
+  }
+  span{
+    color: black;
+    font-size: 13px;
+    background-color: white;
+  }
+  .del{
+    height: 12px;
+    width: 10px;
+    transition: 0.2s;
+  }
+}
+
+.gallery img:hover{
+  //filter: grayscale(80%);
+  transform: scale(1.02);
+}
+
+.lb-outerContainer {
+  border-radius: 30px;
+  background-color: dimgrey;
+  padding: 0;
 }
 

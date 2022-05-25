@@ -32,19 +32,21 @@
                 <a class="nav-link text-black-50" href="#">Contact</a>
               </li>
             </ul>
-            <button type="button" class="btn btn-cart shadow-none" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="img/icon-cart.svg" alt=""></button>
-            <button type="button" class="btn btn-avatar shadow-none"><img src="img/image-avatar.png" alt="" class="w-50 ps-3"></button>
+            <button type="button" class="btn btn-cart shadow-none" data-bs-toggle="modal" data-bs-target="#exampleModal" id="btn-cart"><img src="img/icon-cart.svg" alt=""></button>
+            <button type="button" class="btn btn-avatar shadow-none" data-bs-toggle="modal" data-bs-target="#exampleModal" id="btn-avatar"><img src="img/image-avatar.png" alt="" class="w-50 ps-3"></button>
           </div>
         </div>
       </nav>
       <div class="row min-vh-100 p-5">
-        <div class="col-lg-6 col-12">
+        <div class="col-lg-6 col-sm-12">
           <img src="img/image-product-1.jpg" alt="" class="product-1  w-75">
-          <div class="my-5">
-            <a href="" class="btn p-0"><img src="img/image-product-1-thumbnail.jpg" alt="" class="thumbnail-img"></a>
-            <a href="" class="btn p-0 mx-lg-3"><img src="img/image-product-2-thumbnail.jpg" alt="" class="thumbnail-img"></a>
-            <a href="" class="btn p-0 me-lg-3"><img src="img/image-product-3-thumbnail.jpg" alt="" class="thumbnail-img"></a>
-            <a href="" class="btn p-0"><img src="img/image-product-4-thumbnail.jpg" alt="" class="thumbnail-img"></a>
+          <div class="my-lg-5">
+            <div class="gallery">
+              <a href="img/image-product-1.jpg" data-lightbox="mygallery" class="gallery-img"><img src="img/image-product-1-thumbnail.jpg" alt="" class="thumbnail-img"></a>
+              <a href="img/image-product-2.jpg" data-lightbox="mygallery" class="gallery-img"><img src="img/image-product-2-thumbnail.jpg" alt="" class="thumbnail-img mx-3"></a>
+              <a href="img/image-product-3.jpg" data-lightbox="mygallery" class="gallery-img"><img src="img/image-product-3-thumbnail.jpg" alt="" class="thumbnail-img me-3"></a>
+              <a href="img/image-product-4.jpg" data-lightbox="mygallery" class="gallery-img"><img src="img/image-product-4-thumbnail.jpg" alt="" class="thumbnail-img"></a>
+            </div>
           </div>
         </div>
         <div class="col-lg-6 col-12">
@@ -52,16 +54,16 @@
           <h1 class="fw-bolder">Fall Limited Edition Sneakers</h1>
           <p class="my-4 text-black-50">These low-profile sneakers are your perfect casual wear companion.Featuring a durable rubber outer sole, they will withstand everything the weather can offer.</p>
           <div class="d-flex">
-            <p class="fw-bolder fs-3 price">$125.00</p><span class="fw-bold mx-3 mt-2">50%</span>
+            <p class="fw-bolder fs-3 price" id="price">$125.00</p><span class="fw-bold mx-3 mt-2">50%</span>
           </div>
-          <p class="text-black-50 opacity-50 p-0"><s>$250.00</s></p>
+          <p class="text-black-50 opacity-50 p-0" ><s>$250.00</s></p>
           <div class="d-flex">
             <div class="btn-group bg-light rounded-3 px-2" role="group" aria-label="Basic example">
               <button type="button" id="add" class="btn shadow-none"><img src="img/icon-plus.svg" alt=""></button>
               <button type="button" id="qty" class="btn fw-bold shadow-none disabled" value="0">0</button>
               <button type="button" id="minus" class="btn shadow-none"><img src="img/icon-minus.svg" alt="" class=""></button>
             </div>
-            <button class="btn-add-cart rounded-3 text-white ms-5"><img src="img/icon-cart.svg" alt="" class="cart-img pe-3">Add to cart</button>
+            <button class="btn-add-cart rounded-3 text-white ms-lg-5" id="btn-add-cart" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="img/icon-cart.svg" alt="" class="cart-img pe-lg-3 pe-1">Add to cart</button>
           </div>
         </div>
       </div>
@@ -79,7 +81,23 @@
           </div>
         </div>
       </div>
+
+
+      <div class="modal" id="previewModal" tabindex="-1" aria-labelledby="previewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="previewModalLabel">Cart</h5>
+            </div>
+            <div class="modal-body" id="preview-list">
+
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
+
+
